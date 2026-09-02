@@ -1,0 +1,11 @@
+# Never commit the real config — it carries the MeshTOC API key.
+wx.env
+
+__pycache__/
+*.pyc
+venv/
+
+# Runtime artefacts
+recordings/
+*.wav
+transcripts.json

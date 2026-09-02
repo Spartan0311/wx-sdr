@@ -1,0 +1,13 @@
+[Unit]
+Description=NWR SAME watch (rtl_fm -> samedec -> same_bridge -> MeshTOC)
+After=network-online.target
+
+[Service]
+ExecStart=/opt/wx-sdr/wx_rx.sh
+Restart=always
+RestartSec=10
+Nice=10
+CPUQuota=150%
+
+[Install]
+WantedBy=multi-user.target
